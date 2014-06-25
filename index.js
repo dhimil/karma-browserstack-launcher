@@ -141,7 +141,7 @@ var BrowserStackBrowser = function(id, emitter, args, logger,
             // TODO(vojta): show immediately in createClient callback once this gets fixed:
             // https://github.com/browserstack/api/issues/10
             if (!sessionUrlShowed) {
-              log.info('%s session at %s', browserName, w.browser_url);
+              log.info('%s session for id %s at %s', browserName, w.id, w.browser_url);
               sessionUrlShowed = true;
             }
 
